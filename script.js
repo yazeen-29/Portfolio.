@@ -86,7 +86,7 @@ window.addEventListener("scroll", () => {
   });
 
 });
-
+//alert initialization
 document.addEventListener("DOMContentLoaded", () => {
   const resumeBtn = document.querySelector(".resume");
 
