@@ -86,3 +86,11 @@ window.addEventListener("scroll", () => {
   });
 
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const resumeBtn = document.querySelector(".resume");
+
+  resumeBtn.addEventListener("click", () => {
+    alert("Downloading Resume...");
+  });
+});

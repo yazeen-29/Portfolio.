@@ -548,10 +548,26 @@ nav a:hover::before {
     box-shadow: 0 0 20px rgba(255, 102, 0, 0.6);
     transform: translateY(-5px);
 }
+.resume {
+    color: white !important;
+    background: linear-gradient(135deg, #ff0000, #ff3333) !important;
+    border: 2px solid #ff0000 !important;
+    padding: 8px 20px !important;
+    border-radius: 20px !important;
+    font-weight: 700 !important;
+    transition: all 0.4s ease !important;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5) !important;
+}
 
+.resume:hover {
+    background: linear-gradient(135deg, #ff3333, #ff5555) !important;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.8) !important;
+    transform: translateY(-3px) !important;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8) !important;
+}
 .email-btn {
     padding: 14px 40px;
-    background: linear-gradient(135deg, #ff6600, #ff9933);
+    background: linear-gradient(135deg, #ff0000, #ff3333);
     color: white;
     border: none;
     border-radius: 25px;
@@ -561,13 +577,13 @@ nav a:hover::before {
     transition: all 0.4s ease;
     display: inline-block;
     cursor: pointer;
-    box-shadow: 0 10px 30px rgba(255, 102, 0, 0.4);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
 }
 
 .email-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(255, 102, 0, 0.6);
-    background: linear-gradient(135deg, #ff9933, #ffaa44);
+    box-shadow: 0 15px 40px rgba(255, 0, 0, 0.6);
+    background: linear-gradient(135deg, #ff3333, #ff5555);
 }
 
 
@@ -575,7 +591,7 @@ footer {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.95), rgba(20, 20, 20, 0.9));
     padding: 40px 20px;
     text-align: center;
-    border-top: 2px solid rgba(255, 102, 0, 0.3);
+    border-top: 2px solid rgba(255, 0, 0, 0.3);
 }
 
 footer p {
@@ -628,5 +644,86 @@ nav a.active {
   background: rgba(254, 57, 57, 0.2);
   border-radius: 20px;
   font-weight: 600;
+
+}
+
+
+@media (max-width: 768px) {
+
+  .nav-container {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 10px;
+    font-size: 14px;
+    width: 75%;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .intro {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .main-name {
+    font-size: 40px;
+  }
+
+  .tagline {
+    font-size: 20px;
+  }
+
+  .badge {
+    font-size: 12px;
+    padding: 8px 15px;
+  }
+
+  .cta {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .card,
+  .echv,
+  .crt {
+    width: 100%;
+  }
+
+  .skill {
+    font-size: 16px;
+    padding: 12px 20px;
+    min-width: auto;
+  }
+
+  .details-container {
+    padding: 40px 20px;
+    font-size: 18px;
+  }
+
+  .contact-subtitle {
+    font-size: 22px;
+  }
+
+  .info-item p {
+    font-size: 16px;
+  }
+
+  .email-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .footer p {
+    font-size: 12px;
+    width: 100%;
+  }
 
 }
